@@ -1,0 +1,32 @@
+[cols="<,>,>"]
+|===
+| Command | Mean [ms] | Min…Max [ms]
+
+| `pdu --quantity=len tmp.sample`
+| 127.4 ± 3.6
+| 123.0…137.3
+
+| `dust --apparent-size tmp.sample`
+| 165.5 ± 8.4
+| 155.6…187.0
+
+| `dutree tmp.sample`
+| 3859.0 ± 4.6
+| 3851.9…3863.8
+
+| `dua --apparent-size tmp.sample`
+| 258.2 ± 13.8
+| 243.1…286.9
+
+| `ncdu -o /dev/stdout -0 tmp.sample`
+| 210.1 ± 2.2
+| 208.1…215.3
+
+| `gdu --show-apparent-size --non-interactive --no-progress tmp.sample`
+| 310.6 ± 12.9
+| 291.4…329.7
+
+| `du --apparent-size tmp.sample`
+| 194.4 ± 0.5
+| 193.6…195.3
+|===
